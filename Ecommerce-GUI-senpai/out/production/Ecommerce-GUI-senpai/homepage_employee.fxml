@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #fafcd2;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllerHomepageEmployee">
+	<children>
+		<ImageView fitHeight="45.0" fitWidth="45.0" layoutY="355.0">
+			<image>
+				<Image url="@img/avatar.png" />
+			</image>
+		</ImageView>
+      <HBox layoutX="36.0" layoutY="24.0" prefHeight="331.0" prefWidth="557.0" spacing="20.0">
+         <children>
+      		<VBox alignment="TOP_CENTER" prefHeight="321.0" prefWidth="138.0" spacing="30.0">
+      			<children>
+      				<Button mnemonicParsing="false" onAction="#loadRestockProduct" prefHeight="77.0" prefWidth="134.0" text="Restock Product">
+      					<font>
+      						<Font name="Calibri" size="14.0" />
+      					</font>
+      				</Button>
+      				<Button mnemonicParsing="false" onAction="#loadAddProduct" prefHeight="77.0" prefWidth="134.0" text="Add Product">
+      					<font>
+      						<Font name="Calibri" size="14.0" />
+      					</font>
+      				</Button>
+      				<Button mnemonicParsing="false" onAction="#loadShop" prefHeight="77.0" prefWidth="134.0" text="Go to Shop">
+      					<font>
+      						<Font name="Calibri" size="14.0" />
+      					</font>
+      				</Button>
+      				<Button mnemonicParsing="false" onAction="#shipOrder" prefHeight="77.0" prefWidth="134.0" text="Ship Order">
+      					<font>
+      						<Font name="Calibri" size="14.0" />
+      					</font>
+      				</Button>
+      			</children>
+      		</VBox>
+      		<TreeView fx:id="treeView" prefHeight="331.0" prefWidth="279.0" />
+         </children>
+      </HBox>
+		<Button layoutX="497.0" layoutY="360.0" mnemonicParsing="false" onAction="#logout" prefHeight="33.0" prefWidth="68.0" text="Logout">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font></Button>
+		<Text fx:id="name" layoutX="45.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+			<font>
+				<Font name="Calibri" size="18.0" />
+			</font>
+		</Text>
+	</children>
+</AnchorPane>

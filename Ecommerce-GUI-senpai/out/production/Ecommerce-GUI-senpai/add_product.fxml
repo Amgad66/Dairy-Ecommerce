@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #fafcd2;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ControllerAddProduct">
+   <children>
+	  <Text layoutX="108.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Please fill the form to add a new product">
+		 <font>
+			<Font name="Calibri" size="25.0" />
+		 </font>
+	  </Text>
+	  <VBox alignment="CENTER" layoutX="225.0" layoutY="96.0" prefHeight="278.0" prefWidth="149.0" spacing="15.0">
+		 <children>
+			<TextField fx:id="name" promptText="Name">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font></TextField>
+			<TextField fx:id="year" promptText="Year">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font></TextField>
+			<TextField fx:id="producer" promptText="Producer">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font></TextField>
+			<TextArea fx:id="notes" prefHeight="67.0" prefWidth="149.0" promptText="Notes" wrapText="true">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font></TextArea>
+			<Button mnemonicParsing="false" onAction="#addProduct" prefHeight="29.0" prefWidth="60.0" text="Add">
+               <font>
+                  <Font name="Calibri" size="14.0" />
+               </font></Button>
+		 </children>
+	  </VBox>
+	  <Button layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#back" prefHeight="34.0" prefWidth="59.0" text="&lt; Back">
+         <font>
+            <Font name="Calibri" size="14.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
